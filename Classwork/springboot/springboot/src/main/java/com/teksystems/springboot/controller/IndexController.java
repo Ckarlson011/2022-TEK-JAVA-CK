@@ -1,4 +1,4 @@
-package controller;
+package com.teksystems.springboot.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,11 +15,11 @@ public class IndexController {
 		return null;
 	}
 
-	@RequestMapping(value = { "/search", "/search.html"}, method = RequestMethod.GET)
+	@RequestMapping(value = { "/search", "/search.html" }, method = RequestMethod.GET)
 	public ModelAndView search() {
 		System.out.println("Index controller search request");
 
 		return null;
 	}
-	
+
 }
