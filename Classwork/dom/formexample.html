@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <h1>Form Example</h1>
+
+    <form onSubmit="onSub6mit()">
+        First Name <input type="text" name="firstName" id="firstNameId">
+        <br>
+        Last Name <input type="text" name="lastName" id="lastnameId">
+        <br>
+        phone # <input type="text" name="phone" id="phoneId">
+        <br><br>
+        <button>submit</button>
+        </form>
+    <script>
+        function onSubmit(evt) {
+            evt.preventDefault();
+            console.log("form submitted");
+
+            let firstName = document.getElementById("firstNameId").value;
+            let lastName = document.getElementById("lastnameId").value;
+            let phoneNumber = document.getElementById("phoneId").value;
+            
+            console.log(fn.value);
+
+        }
+    </script>
+    <!-- when the form submits -->
+<!-- make sure the phone number only has numbers and spaces -->
+<!-- make sure the first and last name fields have a value in them -->
+<!-- when there is an error, I want you to change the border color of the input tag to be red -->
+<!-- also, put a red message under the input box giving an error message -->
+  </body>
+</html>
