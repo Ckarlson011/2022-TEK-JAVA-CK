@@ -25,6 +25,7 @@ function signupAccept() {
     let username = document.forms['signupForm']['username'].value;
     let password = document.forms['signupForm']['password'].value;
     let passwordConfirm = document.forms['signupForm']['passwordConfirm'].value;
+    let adminSelect = document.forms['signupForm']['adminSelect'].value;
     let entries=[firstName,lastName,username,password,passwordConfirm];
     for (i=1; i<5; i++) {
         if (entries[i] == "") {
@@ -32,9 +33,12 @@ function signupAccept() {
             return;
         }
     }
-
     if (password != passwordConfirm) {
         alert("passwords do not match");
+        return;
+    }
+    if (password.length < 8) {
+        alert("password must be at least 8 characters long");
         return;
     }
 }

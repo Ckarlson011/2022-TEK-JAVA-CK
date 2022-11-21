@@ -45,12 +45,19 @@
               <!-- Password input -->
               <div class="form-outline mb-4">
                 <input name="password" type="password" id="password-register" class="form-control" />
-                <label class="form-label" for="password-register">Password</label>
+                <label class="form-label" for="password-register">Password (8 characters) </label>
               </div>
             <!-- Password confirm input -->
             <div class="form-outline mb-4">
                   <input name="passwordConfirm" type="password" id="password-confirm-register" class="form-control" />
                   <label class="form-label" for="password-confirm-register">Confirm Password</label>
+            </div>
+
+            <div class="dropdown">
+              <select class="admin" type="select" id="admin-or-user" name="adminSelect">
+                <option>User</option>
+                <option>Admin</option>
+              </select>
             </div>
               
               <!-- Submit button -->
