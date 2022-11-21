@@ -13,7 +13,10 @@
 	<h1>Index Page ${name}</h1>
 
     <form method="get" action="/">
-        Search : <input type="text" name="search" value="${search}">
+        Course Name : <input type="text" name="courseName" value="${courseNameKey}" style="margin-bottom:10px">
+        <br>
+        Instructor Name : <input type="text" name="instructorName" value="${instructorNameKey}" style="margin-bottom:10px">
+        <br>
         <button type="submit">Search</button>
     </form>
     
@@ -22,12 +25,14 @@
     <table border="1" cellpadding="5">
         <tr>
             <td><B>ID</B></td>
-            <td><b>Name</b></td>
+            <td><b>Course Name</b></td>
+            <td><b>Instructor</b></td>
         </tr>
         <c:forEach items="${courses}" var="course">
             <tr>      
                 <td>${course.id}</td>
                 <td>${course.name}</td>
+                <td>${course.instructor}</td>
             </tr>
         </c:forEach>
     </table>
