@@ -14,12 +14,6 @@ function loginAccept() {
 }
 
 function signupAccept() {
-    //name="signupForm"
-    //name="firstname"
-    //name="lastname"
-    //name="username"
-    //name="password"
-    //name="passwordConfirm"
     let firstName = document.forms['signupForm']['firstname'].value;
     let lastName = document.forms['signupForm']['lastname'].value;
     let username = document.forms['signupForm']['username'].value;
